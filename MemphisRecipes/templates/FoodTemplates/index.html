@@ -1,0 +1,22 @@
+{% load static %} {# pulls from static to get the layouts probably can use exact fiels for this #}
+<link rel="stylesheet" href="{% static 'FoodStaticContent/bootstrap.css' %}">
+<div class="jumbotron">
+    <p>This is the MemphisRecipes app</p>
+</div>
+{% if form_list %}
+    <ul>
+        {% for eachItem in MemphisRecipes_list %}
+            <li>{{ eachItem.foodname }}</li>
+            <li>{{ eachItem.foodrecipe }}</li>
+            <li>{{ eachItem.timetocook }}</li>
+            <li>{{ eachItem.datemade }}</li>
+
+
+
+        {% endfor %}
+    </ul>
+{% else %}
+    <p> Good Job.</p>
+{% endif %}
+<script src="{% static 'forms_app/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'forms_app/bootstrap.js' %}"></script>

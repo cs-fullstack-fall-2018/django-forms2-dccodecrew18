@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'forms_app'
+    'forms_app',
+    'MemphisRecipes'
 ]
 
 MIDDLEWARE = [
@@ -50,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'forms_project.urls'
+ROOT_URLCONF = 'forms_project.urls' # seems like i would chang ethis to my root
 
 TEMPLATES = [
     {

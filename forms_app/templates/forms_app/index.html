@@ -1,5 +1,5 @@
 {# Testing here #}
-{% load static %}
+{% load static %} {# pulls from static to get the layouts probably can use exact files for this #}
 <link rel="stylesheet" href="{% static 'forms_app/bootstrap.css' %}">
 <div class="jumbotron">
 	<p>This is the forms app</p>
@@ -15,3 +15,5 @@
 	{% endif %}
 <script src="{% static 'forms_app/jquery-3.3.1.min.js' %}"></script>
 <script src="{% static 'forms_app/bootstrap.js' %}"></script>
+
+{# this the latest change didnt learn yet. Mirror tmeplates of original app to fit mine? Also static#}
